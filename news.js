@@ -23,12 +23,12 @@ xhr.onload = function () {
       // console.log(articles[news]);
     let news =  `<div class="card">
                             <div class="card-header" id="heading${index}">
-                                <h2 class="mb-0">
+                                <h3 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse${index}"
                                     aria-expanded="false" aria-controls="collapse${index}">
                                    <b>Breaking News ${index+1}:</b> ${element["title"]}
                                 </button>
-                                </h2>
+                                </h3>
                             </div>
 
                             <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#newsAccordion">
@@ -39,7 +39,10 @@ xhr.onload = function () {
     });
     newsaccordion.innerHTML = newsHtml;
   } else {
-    console.log("some eroor occured");
+    console.log("some error occured pls check the error");
   }
 }
 xhr.send();
+
+const va="hi";
+console.log("hii",va);
